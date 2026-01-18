@@ -42,10 +42,14 @@ export default function Packages() {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <Card className="border-primary/20 bg-primary/5">
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-xl">Group Discounts</CardTitle>
+                  <CardTitle className="text-xl">Standard Group Rates</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 text-left max-w-xs mx-auto">
+                    <div className="bg-primary/10 p-3 rounded-lg mb-4 text-center">
+                      <p className="text-sm font-semibold text-primary">Recommended Minimum</p>
+                      <p className="text-xl font-bold">3 Pax → KES 40,000</p>
+                    </div>
                     <div className="flex justify-between items-center border-b border-primary/10 pb-2">
                       <span className="font-medium">8 People</span>
                       <span className="text-primary font-bold">KES 27,000 each</span>
@@ -59,6 +63,9 @@ export default function Packages() {
                       <span className="text-primary font-bold">KES 33,000 each</span>
                     </div>
                   </div>
+                  <p className="text-[10px] text-muted-foreground mt-4 text-center italic">
+                    * For guests with their own transport and food: KES 7,000 per person per day
+                  </p>
                 </CardContent>
               </Card>
 
