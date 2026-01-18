@@ -18,10 +18,10 @@ export const packages: Package[] = [
     id: "marsabit-forest",
     title: "Marsabit Forest & Lake Exploration",
     duration: "3 Days",
-    price: "KES 5,000",
+    price: "KES 5,000 per day",
     image: lakeParadise,
     description: "Discover the enchanting Marsabit forest and the picturesque Lake Paradise. Immerse yourself in birdwatching and cultural experiences.",
-    highlights: ["Lake Paradise", "Birdwatching Excursion", "Rendille Traditional Meal", "Cultural Dance"],
+    highlights: ["Lake Paradise", "Birdwatching Excursion", "Rendille Traditional Meal", "Cultural Experiences"],
   },
   {
     id: "chalbi-desert",
@@ -34,12 +34,12 @@ export const packages: Package[] = [
   },
   {
     id: "loyangalani",
-    title: "Loyangalani Exploration",
+    title: "Loiyangalani Exploration",
     duration: "5 Days",
     price: "KES 5,000 per day",
     image: rendilleCulture,
     description: "Experience the magic of Lake Tours in Loiyangalani, including boat riding and cultural interactions with Turkana and Elmolo communities.",
-    highlights: ["Wind Turbines", "Lake Turkana Boat Ride", "Elmolo Culture", "Fishing"],
+    highlights: ["Wind Turbines", "Lake Turkana Boat Ride", "Elmolo Culture", "Cultural Experiences"],
   },
   {
     id: "ngurunit-thrills",
@@ -48,7 +48,7 @@ export const packages: Package[] = [
     price: "KES 5,000 per day",
     image: camelTrek,
     description: "Adventure awaits in Ngurunit with rock sliding, mountain climbing, and camel riding experiences against stunning backdrops.",
-    highlights: ["Rock Sliding", "Mountain Climbing", "Camel Riding", "Blacksmith Visit"],
+    highlights: ["Rock Sliding", "Mountain Climbing", "Camel Riding", "Cultural Experiences"],
   },
   {
     id: "ultimate-marathon",
