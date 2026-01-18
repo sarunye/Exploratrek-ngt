@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 
+import logoImg from "@assets/generated_images/exploratrek_tours_hand-drawn_logo.png";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +12,10 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 max-w-screen-xl items-center justify-between px-4">
         <Link href="/">
-          <a className="mr-6 flex items-center space-x-2">
+          <a className="mr-6 flex items-center space-x-3 group">
+            <div className="w-12 h-12 overflow-hidden rounded-lg border border-border/50 group-hover:border-primary/50 transition-colors">
+              <img src={logoImg} alt="ExploraTrek Logo" className="w-full h-full object-cover" />
+            </div>
             <span className="font-heading text-xl font-bold text-primary sm:text-2xl">
               ExploraTrek<span className="text-foreground">Tours</span>
             </span>

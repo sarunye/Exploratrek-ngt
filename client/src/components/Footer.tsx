@@ -1,13 +1,18 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
+import logoImg from "@assets/generated_images/exploratrek_tours_hand-drawn_logo.png";
+
 export function Footer() {
   return (
     <footer className="w-full border-t bg-card py-12 text-card-foreground">
       <div className="container max-w-screen-xl px-4 grid gap-8 md:grid-cols-4">
         <div className="flex flex-col gap-4">
           <Link href="/">
-            <a className="flex items-center space-x-2">
+            <a className="flex items-center space-x-3 group">
+              <div className="w-10 h-10 overflow-hidden rounded-md border border-border/50">
+                <img src={logoImg} alt="ExploraTrek Logo" className="w-full h-full object-cover" />
+              </div>
               <span className="font-heading text-2xl font-bold text-primary">
                 ExploraTrek<span className="text-foreground">Tours</span>
               </span>
