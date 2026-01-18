@@ -40,19 +40,21 @@ export default function BookingCalculator() {
     if (isSelfTransport) {
       basePricePerPerson = 7000 * duration;
     } else {
-      if (pax >= 8) basePricePerPerson = 27000;
-      else if (pax === 7) basePricePerPerson = 30000;
-      else if (pax === 6) basePricePerPerson = 33000;
-      else {
-        // Fallback or minimum 3 pax logic
-        const totalBase = 40000;
+      // Base rate for up to 3 pax is 40,000 total (approx 13,334 ea)
+      // Every additional person adds 2,000 per day or just 2,000 flat?
+      // "initial rates stands for a max of 3 pax, any other additional person, need to add 2000"
+      if (pax <= 3) {
+        basePricePerPerson = Math.ceil(40000 / pax);
+      } else {
+        const extraPax = pax - 3;
+        const totalBase = 40000 + (extraPax * 2000);
         basePricePerPerson = Math.ceil(totalBase / pax);
       }
     }
 
     const extrasTotal = selectedExtras.reduce((sum, extraId) => {
-      const extra = ADDITIONAL_EXPERIENCES.find(e => e.id === extraId);
-      return sum + (extra?.price || 0);
+      // "each activity is per person is charged 7000"
+      return sum + 7000;
     }, 0);
 
     const totalPerPerson = basePricePerPerson + extrasTotal;

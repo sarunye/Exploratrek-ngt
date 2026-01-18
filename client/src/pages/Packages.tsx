@@ -47,20 +47,12 @@ export default function Packages() {
                 <CardContent>
                   <div className="space-y-3 text-left max-w-xs mx-auto">
                     <div className="bg-primary/10 p-3 rounded-lg mb-4 text-center">
-                      <p className="text-sm font-semibold text-primary">Recommended Minimum</p>
-                      <p className="text-xl font-bold">3 Pax → KES 40,000</p>
+                      <p className="text-sm font-semibold text-primary">Group Base (1-3 Pax)</p>
+                      <p className="text-xl font-bold">KES 40,000 total</p>
                     </div>
                     <div className="flex justify-between items-center border-b border-primary/10 pb-2">
-                      <span className="font-medium">8 People</span>
-                      <span className="text-primary font-bold">KES 27,000 each</span>
-                    </div>
-                    <div className="flex justify-between items-center border-b border-primary/10 pb-2">
-                      <span className="font-medium">7 People</span>
-                      <span className="text-primary font-bold">KES 30,000 each</span>
-                    </div>
-                    <div className="flex justify-between items-center pb-2">
-                      <span className="font-medium">6 People</span>
-                      <span className="text-primary font-bold">KES 33,000 each</span>
+                      <span className="font-medium">Additional Person</span>
+                      <span className="text-primary font-bold">+ KES 2,000 each</span>
                     </div>
                   </div>
                   <p className="text-[10px] text-muted-foreground mt-4 text-center italic font-semibold text-primary/80">
