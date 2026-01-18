@@ -40,16 +40,15 @@ export default function BookingCalculator() {
     if (isSelfTransport) {
       basePricePerPerson = 7000 * duration;
     } else {
-      // Base rate for up to 3 pax is 40,000 total (approx 13,334 ea)
-      // Every additional person adds 2,000 per day or just 2,000 flat?
-      // "initial rates stands for a max of 3 pax, any other additional person, need to add 2000"
-      if (pax <= 3) {
-        basePricePerPerson = Math.ceil(40000 / pax);
-      } else {
-        const extraPax = pax - 3;
-        const totalBase = 40000 + (extraPax * 2000);
-        basePricePerPerson = Math.ceil(totalBase / pax);
-      }
+      // Base rate: Each person in the initial group (up to 3) pays 40,000
+      // "max 3 pax it means that each pax pays 40k"
+      basePricePerPerson = 40000;
+      
+      // If there are more than 3, each additional person adds 2,000 to the total
+      // The prompt says "any other additional person, need to add 2000"
+      // This implies the 4th, 5th etc. person adds 2000 to the grand total
+      // But let's check if the user meant 2000 per person or total. 
+      // Usually "add 2000" in this context refers to a group increment.
     }
 
     const extrasTotal = selectedExtras.reduce((sum, extraId) => {
@@ -57,13 +56,17 @@ export default function BookingCalculator() {
       return sum + 7000;
     }, 0);
 
-    const totalPerPerson = basePricePerPerson + extrasTotal;
-    const grandTotal = totalPerPerson * pax;
+    const baseTotal = basePricePerPerson * Math.min(pax, 3);
+    const extraPax = Math.max(0, pax - 3);
+    const grandTotalBase = baseTotal + (extraPax * 2000);
+    
+    const finalTotalPerPerson = (grandTotalBase / pax) + extrasTotal;
+    const grandTotal = grandTotalBase + (extrasTotal * pax);
 
     return {
       basePerPerson: basePricePerPerson,
       extrasTotal,
-      totalPerPerson,
+      totalPerPerson: finalTotalPerPerson,
       grandTotal,
       duration
     };
