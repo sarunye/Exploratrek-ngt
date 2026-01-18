@@ -99,7 +99,7 @@ export function PackageCard({ pkg }: PackageCardProps) {
       <CardFooter>
         <Button 
           className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
-          onClick={() => window.location.href = "/contact"}
+          onClick={() => window.location.href = "/booking"}
         >
           Book Adventure
         </Button>

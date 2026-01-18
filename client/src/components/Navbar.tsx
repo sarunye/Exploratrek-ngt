@@ -30,10 +30,13 @@ export function Navbar() {
           <Link href="/packages">
             <a className="text-sm font-medium transition-colors hover:text-primary">Packages</a>
           </Link>
+          <Link href="/booking">
+            <a className="text-sm font-medium transition-colors hover:text-primary">Planner</a>
+          </Link>
           <Link href="/contact">
             <a className="text-sm font-medium transition-colors hover:text-primary">Contact</a>
           </Link>
-          <Link href="/contact">
+          <Link href="/booking">
             <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90">
               Book Now
             </Button>
@@ -60,10 +63,13 @@ export function Navbar() {
             <Link href="/packages">
               <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Packages</a>
             </Link>
+            <Link href="/booking">
+              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Planner</a>
+            </Link>
             <Link href="/contact">
               <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Contact</a>
             </Link>
-            <Link href="/contact">
+            <Link href="/booking">
               <Button className="w-full bg-primary hover:bg-primary/90" onClick={() => setIsOpen(false)}>
                 Book Now
               </Button>
