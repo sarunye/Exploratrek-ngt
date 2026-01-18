@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { PackageCard } from "@/components/PackageCard";
 import { packages } from "@/data/packages";
 import { motion } from "framer-motion";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function Packages() {
   return (
@@ -35,23 +36,45 @@ export default function Packages() {
 
       <section className="bg-primary/5 py-16 border-t border-primary/10">
         <div className="container px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">Need something specific?</h2>
-            <p className="text-muted-foreground mb-8">
-              We offer tailor-made packages to suit your preferences and desired duration. 
-              We also handle vehicle rentals, hotel bookings, and mechanics assistance.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto bg-card p-6 rounded-xl border border-border/50 shadow-sm">
-              <ul className="space-y-2 text-sm text-foreground/80">
-                <li className="flex items-center gap-2">✓ Hotel & Accommodation Booking</li>
-                <li className="flex items-center gap-2">✓ Vehicle Rentals (Land Cruisers)</li>
-                <li className="flex items-center gap-2">✓ Mechanics Assistance</li>
-              </ul>
-              <ul className="space-y-2 text-sm text-foreground/80">
-                <li className="flex items-center gap-2">✓ Electronics Purchases</li>
-                <li className="flex items-center gap-2">✓ Tour Guide Connections</li>
-                <li className="flex items-center gap-2">✓ Virtual Travel Companion</li>
-              </ul>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-8">Group Pricing & Additional Services</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="border-primary/20 bg-primary/5">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-xl">Group Discounts</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3 text-left max-w-xs mx-auto">
+                    <div className="flex justify-between items-center border-b border-primary/10 pb-2">
+                      <span className="font-medium">8 People</span>
+                      <span className="text-primary font-bold">KES 27,000 each</span>
+                    </div>
+                    <div className="flex justify-between items-center border-b border-primary/10 pb-2">
+                      <span className="font-medium">7 People</span>
+                      <span className="text-primary font-bold">KES 30,000 each</span>
+                    </div>
+                    <div className="flex justify-between items-center pb-2">
+                      <span className="font-medium">6 People</span>
+                      <span className="text-primary font-bold">KES 33,000 each</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="flex flex-col justify-center">
+                <p className="text-muted-foreground mb-6 text-left">
+                  We offer tailor-made packages to suit your preferences and desired duration. 
+                  We also handle vehicle rentals, hotel bookings, and mechanics assistance.
+                </p>
+                <div className="grid grid-cols-1 gap-2 text-left bg-card p-6 rounded-xl border border-border/50 shadow-sm">
+                  <ul className="space-y-2 text-sm text-foreground/80">
+                    <li className="flex items-center gap-2">✓ Hotel & Accommodation Booking</li>
+                    <li className="flex items-center gap-2">✓ Vehicle Rentals (Land Cruisers)</li>
+                    <li className="flex items-center gap-2">✓ Virtual Travel Companion</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
