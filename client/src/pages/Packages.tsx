@@ -63,8 +63,8 @@ export default function Packages() {
                       <span className="text-primary font-bold">KES 33,000 each</span>
                     </div>
                   </div>
-                  <p className="text-[10px] text-muted-foreground mt-4 text-center italic">
-                    * For guests with their own transport and food: KES 7,000 per person per day
+                  <p className="text-[10px] text-muted-foreground mt-4 text-center italic font-semibold text-primary/80">
+                    * The KES 7,000 rate applies ONLY to guests providing their own transport and food.
                   </p>
                 </CardContent>
               </Card>
