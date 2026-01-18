@@ -62,18 +62,55 @@ export default function Packages() {
                 </CardContent>
               </Card>
 
-              <div className="flex flex-col justify-center">
-                <p className="text-muted-foreground mb-6 text-left">
-                  We offer tailor-made packages to suit your preferences and desired duration. 
-                  We also handle vehicle rentals, hotel bookings, and mechanics assistance.
-                </p>
-                <div className="grid grid-cols-1 gap-2 text-left bg-card p-6 rounded-xl border border-border/50 shadow-sm">
-                  <ul className="space-y-2 text-sm text-foreground/80">
-                    <li className="flex items-center gap-2">✓ Hotel & Accommodation Booking</li>
-                    <li className="flex items-center gap-2">✓ Vehicle Rentals (Land Cruisers)</li>
-                    <li className="flex items-center gap-2">✓ Virtual Travel Companion</li>
-                  </ul>
-                </div>
+              <Card className="border-secondary/20 bg-secondary/5">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-xl">Add-on Experiences</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs text-muted-foreground mb-4 text-center">Customize your journey with these exciting activities.</p>
+                  <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-left">
+                    <div className="flex items-center gap-2"><span>• Camel Rides</span></div>
+                    <div className="flex items-center gap-2"><span>• Bike Rides</span></div>
+                    <div className="flex items-center gap-2"><span>• Boat Rides</span></div>
+                    <div className="flex items-center gap-2"><span>• Rock Sliding</span></div>
+                    <div className="flex items-center gap-2"><span>• Fishing</span></div>
+                    <div className="flex items-center gap-2"><span>• Mtn Climbing</span></div>
+                    <div className="flex items-center gap-2"><span>• Culture Exp.</span></div>
+                    <div className="flex items-center gap-2"><span>• Tents/Camping</span></div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-secondary/10 text-center">
+                    <p className="font-bold text-secondary">Fees: KES 10,000 — 20,000 per person</p>
+                    <p className="text-[10px] text-muted-foreground mt-1">* Drinks at extra cost</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
+              <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
+                <span className="text-3xl">🔥</span> Traditional Goat Roasting
+              </h3>
+              <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">
+                Experience an authentic Marsabit tradition with our signature goat roasting (Nyama Choma). 
+                We can organize this special feast both at home and during your hike. 
+                Perfect for celebrating your journey under the stars.
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-center">
+              <p className="text-muted-foreground mb-6 text-center">
+                We offer tailor-made packages to suit your preferences and desired duration. 
+                We also handle vehicle rentals, hotel bookings, and mechanics assistance.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left bg-card p-6 rounded-xl border border-border/50 shadow-sm max-w-2xl mx-auto w-full">
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  <li className="flex items-center gap-2">✓ Hotel & Accommodation Booking</li>
+                  <li className="flex items-center gap-2">✓ Vehicle Rentals (Land Cruisers)</li>
+                </ul>
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  <li className="flex items-center gap-2">✓ Mechanics Assistance</li>
+                  <li className="flex items-center gap-2">✓ Virtual Travel Companion</li>
+                </ul>
               </div>
             </div>
           </div>
