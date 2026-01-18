@@ -86,8 +86,8 @@ export default function BookingCalculator() {
         <div className="container px-4 text-center">
           <h1 className="font-heading text-4xl font-bold mb-4">Adventure Planner</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Customize your Marsabit journey. Choose your group size, select your destination, 
-            and add unique experiences to get an instant quote.
+            Use this tool to calculate your exact trip costs. Select your group size, core adventure, and any add-on experiences. 
+            Note: Standard rates apply for groups up to 3 people (40k each), with extra guests adding 2k to the group total.
           </p>
         </div>
       </div>

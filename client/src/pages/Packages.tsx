@@ -4,6 +4,9 @@ import { PackageCard } from "@/components/PackageCard";
 import { packages } from "@/data/packages";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Calculator } from "lucide-react";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export default function Packages() {
   return (
@@ -51,13 +54,25 @@ export default function Packages() {
                       <p className="text-xl font-bold">KES 40,000 per person</p>
                     </div>
                     <div className="flex justify-between items-center border-b border-primary/10 pb-2">
-                      <span className="font-medium">Each Additional Person (4th+)</span>
-                      <span className="text-primary font-bold">+ KES 2,000</span>
+                      <span className="font-medium">Additional Guests (4th+)</span>
+                      <span className="text-primary font-bold">+ KES 2,000 each</span>
+                    </div>
+                    <div className="flex justify-between items-center pb-2">
+                      <span className="font-medium">Self-Transport Rate</span>
+                      <span className="text-primary font-bold">KES 7,000 /day</span>
                     </div>
                   </div>
-                  <p className="text-[10px] text-muted-foreground mt-4 text-center italic font-semibold text-primary/80">
-                    * The KES 7,000 rate applies ONLY to guests providing their own transport and food.
-                  </p>
+                  <div className="mt-6 pt-4 border-t border-primary/10">
+                    <Link href="/booking">
+                      <Button className="w-full bg-primary hover:bg-primary/90 flex gap-2 items-center justify-center py-6">
+                        <Calculator className="w-5 h-5" />
+                        <div>
+                          <div className="font-bold">Open Adventure Planner</div>
+                          <div className="text-[10px] opacity-80 font-normal">Calculate exact group rates & add-ons</div>
+                        </div>
+                      </Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
 
