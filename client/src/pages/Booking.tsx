@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { packages } from "@/data/packages";
 import { Calculator, Users, MapPin, Sparkles, Receipt, Wallet } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { PaymentModal } from "@/components/PaymentModal";
 
 const ADDITIONAL_EXPERIENCES = [
   { id: "camel", label: "Camel Rides", price: 15000 },
@@ -28,6 +29,7 @@ export default function BookingCalculator() {
   const [selectedPackageId, setSelectedPackageId] = useState(packages[0].id);
   const [selectedExtras, setSelectedExtras] = useState<string[]>([]);
   const [isSelfTransport, setIsSelfTransport] = useState(false);
+  const [isPaymentOpen, setIsPaymentOpen] = useState(false);
 
   const selectedPackage = useMemo(() => 
     packages.find(p => p.id === selectedPackageId) || packages[0],
@@ -232,14 +234,20 @@ export default function BookingCalculator() {
                       <p className="text-[10px] text-muted-foreground mt-1">Or Lipa na M-PESA Paybill: 247247 (Acc: 0707083728)</p>
                     </div>
                   </div>
-                  <Button className="w-full bg-primary hover:bg-primary/90 py-6 text-lg font-bold" onClick={() => window.location.href = "/contact"}>
-                    Confirm Booking
+                  <Button className="w-full bg-primary hover:bg-primary/90 py-6 text-lg font-bold" onClick={() => setIsPaymentOpen(true)}>
+                    Confirm & Pay Now
                   </Button>
                 </div>
               </CardContent>
             </Card>
           </div>
         </div>
+
+        <PaymentModal 
+          isOpen={isPaymentOpen} 
+          onClose={() => setIsPaymentOpen(false)} 
+          amount={pricing.grandTotal} 
+        />
       </div>
 
       <Footer />
