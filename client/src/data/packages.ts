@@ -11,6 +11,7 @@ export interface Package {
   image: string;
   description: string;
   highlights: string[];
+  videoUrl?: string;
 }
 
 export const packages: Package[] = [
@@ -49,6 +50,7 @@ export const packages: Package[] = [
     image: camelTrek,
     description: "Adventure awaits in Ngurunit with rock sliding, mountain climbing, and camel riding experiences against stunning backdrops.",
     highlights: ["Rock Sliding", "Mountain Climbing", "Camel Riding", "Cultural Experiences"],
+    videoUrl: "https://www.youtube.com/embed/JGi_j6p0smc"
   },
   {
     id: "ultimate-marathon",
@@ -67,6 +69,7 @@ export const packages: Package[] = [
     image: rendilleCulture,
     description: "Witness the ancient art of traditional ironworking with the blacksmiths of Merille. A unique cultural journey into the heart of Rendille craftsmanship.",
     highlights: ["Traditional Ironworking", "Merille Village Tour", "Rendille Craftsmanship", "Cultural Interaction"],
+    videoUrl: "https://www.youtube.com/embed/yX5VWRocKss"
   },
   {
     id: "samburu-immersion",
@@ -76,6 +79,7 @@ export const packages: Package[] = [
     image: rendilleCulture,
     description: "Experience the vibrant heart of Samburu culture. Join the community in their daily life, witness the spectacular traditional dances, and learn about the deep-rooted nomadic traditions of these resilient warriors.",
     highlights: ["Warrior Singing & Dance", "Traditional Homestead (Manyatta) Visit", "Beadwork Workshop", "Nomadic Lifestyle Experience"],
+    videoUrl: "https://www.youtube.com/embed/Q0WmlsNmHRo"
   },
   {
     id: "borana-heritage",
@@ -85,5 +89,6 @@ export const packages: Package[] = [
     image: rendilleCulture,
     description: "Deep dive into the sophisticated cultural heritage of the Borana people. Learn about their unique governance system, traditional songs, and the deep spiritual connection to their livestock and ancestral lands.",
     highlights: ["Gada System Insights", "Traditional Borana Singing", "Livestock Market Visit", "Oral History Storytelling"],
+    videoUrl: "https://www.youtube.com/embed/ZQjAI-YU9wk"
   },
 ];

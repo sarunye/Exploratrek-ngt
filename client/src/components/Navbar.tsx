@@ -30,6 +30,12 @@ export function Navbar() {
           <Link href="/packages">
             <a className="text-sm font-medium transition-colors hover:text-primary">Packages</a>
           </Link>
+          <Link href="/stories">
+            <a className="text-sm font-medium transition-colors hover:text-primary">Stories</a>
+          </Link>
+          <Link href="/media">
+            <a className="text-sm font-medium transition-colors hover:text-primary">Gallery</a>
+          </Link>
           <Link href="/booking">
             <a className="text-sm font-medium transition-colors hover:text-primary">Planner</a>
           </Link>
@@ -62,6 +68,12 @@ export function Navbar() {
             </Link>
             <Link href="/packages">
               <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Packages</a>
+            </Link>
+            <Link href="/stories">
+              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Stories</a>
+            </Link>
+            <Link href="/media">
+              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Gallery</a>
             </Link>
             <Link href="/booking">
               <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Planner</a>
