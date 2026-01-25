@@ -68,4 +68,13 @@ export const packages: Package[] = [
     description: "Witness the ancient art of traditional ironworking with the blacksmiths of Merille. A unique cultural journey into the heart of Rendille craftsmanship.",
     highlights: ["Traditional Ironworking", "Merille Village Tour", "Rendille Craftsmanship", "Cultural Interaction"],
   },
+  {
+    id: "samburu-immersion",
+    title: "Samburu Cultural Immersion",
+    duration: "2 Days",
+    price: "KES 7,000 per day (Self-Transport)",
+    image: rendilleCulture,
+    description: "Experience the vibrant heart of Samburu culture. Join the community in their daily life, witness the spectacular traditional dances, and learn about the deep-rooted nomadic traditions of these resilient warriors.",
+    highlights: ["Warrior Singing & Dance", "Traditional Homestead (Manyatta) Visit", "Beadwork Workshop", "Nomadic Lifestyle Experience"],
+  },
 ];

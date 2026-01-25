@@ -102,6 +102,18 @@ export default function Packages() {
 
             <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
               <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
+                <span className="text-3xl">🏹</span> Samburu Warrior Culture
+              </h3>
+              <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">
+                Step into the vibrant world of the Samburu people. Known for their intricate beadwork and 
+                powerful singing, we offer a rare window into their nomadic lifestyle. Witness the 
+                spectacular jumping dances and join the 'Moran' (warriors) as they share stories of 
+                resilience and tradition under the vast Marsabit sky.
+              </p>
+            </div>
+
+            <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
+              <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
                 <span className="text-3xl">🛷</span> Rock Sliding Adventure
               </h3>
               <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">

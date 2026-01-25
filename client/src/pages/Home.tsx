@@ -76,7 +76,7 @@ export default function Home() {
                 <Users className="w-6 h-6" />
               </div>
               <h3 className="font-heading text-xl font-bold mb-3">Cultural Immersion</h3>
-              <p className="text-muted-foreground">Connect deeply with Rendille, Samburu, Borana, and Turkana communities through authentic interactions.</p>
+              <p className="text-muted-foreground">Connect deeply with Samburu, Rendille, Borana, and Turkana communities through authentic interactions and traditional ceremonies.</p>
             </div>
             <div className="bg-card p-8 rounded-2xl shadow-sm border border-border/50 hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center text-accent-foreground mb-6">
