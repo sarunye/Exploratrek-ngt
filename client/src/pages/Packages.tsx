@@ -102,6 +102,17 @@ export default function Packages() {
 
             <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
               <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
+                <span className="text-3xl">🛷</span> Rock Sliding Adventure
+              </h3>
+              <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">
+                Experience the thrill of Ngurunit's natural rock slides! Carved by mountain waters over centuries, 
+                these smooth granite chutes offer an exhilarating heart-pounding challenge in one of Marsabit's 
+                most beautiful landscapes.
+              </p>
+            </div>
+
+            <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
+              <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
                 <span className="text-3xl">🔥</span> Traditional Goat Roasting
               </h3>
               <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">
