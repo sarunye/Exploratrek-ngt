@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 
@@ -11,41 +11,37 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 max-w-screen-xl items-center justify-between px-4">
-        <Link href="/">
-          <a className="mr-6 flex items-center space-x-3 group">
-            <div className="w-12 h-12 overflow-hidden rounded-lg border border-border/50 group-hover:border-primary/50 transition-colors">
-              <img src={logoImg} alt="ExploraTrek Logo" className="w-full h-full object-cover" />
-            </div>
-            <span className="font-heading text-xl font-bold text-primary sm:text-2xl">
-              ExploraTrek<span className="text-foreground">Tours</span>
-            </span>
-          </a>
+        <Link href="/" className="mr-6 flex items-center space-x-3 group">
+          <div className="w-12 h-12 overflow-hidden rounded-lg border border-border/50 group-hover:border-primary/50 transition-colors">
+            <img src={logoImg} alt="ExploraTrek Logo" className="w-full h-full object-cover" />
+          </div>
+          <span className="font-heading text-xl font-bold text-primary sm:text-2xl">
+            ExploraTrek<span className="text-foreground">Tours</span>
+          </span>
         </Link>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex md:items-center md:gap-8">
-          <Link href="/">
-            <a className="text-sm font-medium transition-colors hover:text-primary">Home</a>
+          <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+            Home
           </Link>
-          <Link href="/packages">
-            <a className="text-sm font-medium transition-colors hover:text-primary">Packages</a>
+          <Link href="/packages" className="text-sm font-medium transition-colors hover:text-primary">
+            Packages
           </Link>
-          <Link href="/stories">
-            <a className="text-sm font-medium transition-colors hover:text-primary">Stories</a>
+          <Link href="/stories" className="text-sm font-medium transition-colors hover:text-primary">
+            Stories
           </Link>
-          <Link href="/media">
-            <a className="text-sm font-medium transition-colors hover:text-primary">Gallery</a>
+          <Link href="/media" className="text-sm font-medium transition-colors hover:text-primary">
+            Gallery
           </Link>
-          <Link href="/booking">
-            <a className="text-sm font-medium transition-colors hover:text-primary">Planner</a>
+          <Link href="/booking" className="text-sm font-medium transition-colors hover:text-primary">
+            Planner
           </Link>
-          <Link href="/contact">
-            <a className="text-sm font-medium transition-colors hover:text-primary">Contact</a>
+          <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
+            Contact
           </Link>
-          <Link href="/booking">
-            <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90">
-              Book Now
-            </Button>
+          <Link href="/booking" className={buttonVariants({ variant: "default", size: "sm", className: "bg-primary hover:bg-primary/90" })}>
+            Book Now
           </Link>
         </div>
 
@@ -63,28 +59,26 @@ export function Navbar() {
       {isOpen && (
         <div className="container md:hidden pb-4">
           <div className="flex flex-col space-y-4 px-4 py-4 bg-background border-t">
-            <Link href="/">
-              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Home</a>
+            <Link href="/" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+              Home
             </Link>
-            <Link href="/packages">
-              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Packages</a>
+            <Link href="/packages" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+              Packages
             </Link>
-            <Link href="/stories">
-              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Stories</a>
+            <Link href="/stories" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+              Stories
             </Link>
-            <Link href="/media">
-              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Gallery</a>
+            <Link href="/media" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+              Gallery
             </Link>
-            <Link href="/booking">
-              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Planner</a>
+            <Link href="/booking" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+              Planner
             </Link>
-            <Link href="/contact">
-              <a className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>Contact</a>
+            <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary" onClick={() => setIsOpen(false)}>
+              Contact
             </Link>
-            <Link href="/booking">
-              <Button className="w-full bg-primary hover:bg-primary/90" onClick={() => setIsOpen(false)}>
-                Book Now
-              </Button>
+            <Link href="/booking" className={buttonVariants({ className: "w-full bg-primary hover:bg-primary/90" })} onClick={() => setIsOpen(false)}>
+              Book Now
             </Link>
           </div>
         </div>

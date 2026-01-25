@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PackageCard } from "@/components/PackageCard";
 import { packages } from "@/data/packages";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin, Users, Globe } from "lucide-react";
@@ -40,15 +40,11 @@ export default function Home() {
               we craft unforgettable adventures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/packages">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 h-12">
-                  View Packages
-                </Button>
+              <Link href="/packages" className={buttonVariants({ size: "lg", className: "bg-primary hover:bg-primary/90 text-lg px-8 h-12" })}>
+                View Packages
               </Link>
-              <Link href="/contact">
-                <Button size="lg" variant="outline" className="text-primary-foreground border-white/40 hover:bg-white/10 text-lg px-8 h-12">
-                  Contact Us
-                </Button>
+              <Link href="/contact" className={buttonVariants({ size: "lg", variant: "outline", className: "text-primary-foreground border-white/40 hover:bg-white/10 text-lg px-8 h-12" })}>
+                Contact Us
               </Link>
             </div>
           </motion.div>
@@ -97,10 +93,8 @@ export default function Home() {
               <h2 className="font-heading text-3xl md:text-4xl font-bold mb-2">Popular Adventures</h2>
               <p className="text-muted-foreground">Curated experiences for every type of traveler.</p>
             </div>
-            <Link href="/packages">
-              <a className="hidden md:flex items-center gap-2 text-primary font-medium hover:underline">
-                View all packages <ArrowRight className="w-4 h-4" />
-              </a>
+            <Link href="/packages" className="hidden md:flex items-center gap-2 text-primary font-medium hover:underline">
+              View all packages <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
           
@@ -111,8 +105,8 @@ export default function Home() {
           </div>
           
           <div className="mt-12 text-center md:hidden">
-            <Link href="/packages">
-              <Button variant="outline" className="w-full">View All Packages</Button>
+            <Link href="/packages" className={buttonVariants({ variant: "outline", className: "w-full" })}>
+              View All Packages
             </Link>
           </div>
         </div>
@@ -126,10 +120,8 @@ export default function Home() {
           <p className="text-secondary-foreground/80 max-w-2xl mx-auto mb-8 text-lg">
             Whether you seek heart-pounding challenges or serene nature retreats, we have the perfect package for you.
           </p>
-          <Link href="/contact">
-            <Button size="lg" variant="secondary" className="bg-white text-secondary hover:bg-white/90 font-bold px-8 py-6 text-lg">
-              Start Planning
-            </Button>
+          <Link href="/contact" className={buttonVariants({ size: "lg", variant: "secondary", className: "bg-white text-secondary hover:bg-white/90 font-bold px-8 py-6 text-lg" })}>
+            Start Planning
           </Link>
         </div>
       </section>
