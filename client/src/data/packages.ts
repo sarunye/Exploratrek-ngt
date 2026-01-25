@@ -59,4 +59,13 @@ export const packages: Package[] = [
     description: "The complete Marsabit experience combining Lake Paradise, Chalbi Desert, North Horr, and Loiyangalani in one epic journey.",
     highlights: ["Complete Circuit", "Diverse Cultures", "Desert & Forest", "Lake Turkana"],
   },
+  {
+    id: "merille-blacksmith",
+    title: "Merille Blacksmith Experience",
+    duration: "1 Day",
+    price: "KES 7,000 per day (Self-Transport)",
+    image: rendilleCulture,
+    description: "Witness the ancient art of traditional ironworking with the blacksmiths of Merille. A unique cultural journey into the heart of Rendille craftsmanship.",
+    highlights: ["Traditional Ironworking", "Merille Village Tour", "Rendille Craftsmanship", "Cultural Interaction"],
+  },
 ];

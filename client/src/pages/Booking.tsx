@@ -20,6 +20,7 @@ const ADDITIONAL_EXPERIENCES = [
   { id: "fish", label: "Fishing", price: 12000 },
   { id: "mtn", label: "Mountain Climbing", price: 20000 },
   { id: "culture", label: "Cultural Experience", price: 15000 },
+  { id: "blacksmith", label: "Merille Blacksmith Visit", price: 12000 },
   { id: "camping", label: "Tents/Camping", price: 10000 },
   { id: "goat", label: "Goat Roasting (Nyama Choma)", price: 15000 },
 ];
