@@ -77,4 +77,13 @@ export const packages: Package[] = [
     description: "Experience the vibrant heart of Samburu culture. Join the community in their daily life, witness the spectacular traditional dances, and learn about the deep-rooted nomadic traditions of these resilient warriors.",
     highlights: ["Warrior Singing & Dance", "Traditional Homestead (Manyatta) Visit", "Beadwork Workshop", "Nomadic Lifestyle Experience"],
   },
+  {
+    id: "borana-heritage",
+    title: "Borana Cultural Heritage",
+    duration: "2 Days",
+    price: "KES 7,000 per day (Self-Transport)",
+    image: rendilleCulture,
+    description: "Deep dive into the sophisticated cultural heritage of the Borana people. Learn about their unique governance system, traditional songs, and the deep spiritual connection to their livestock and ancestral lands.",
+    highlights: ["Gada System Insights", "Traditional Borana Singing", "Livestock Market Visit", "Oral History Storytelling"],
+  },
 ];

@@ -102,6 +102,18 @@ export default function Packages() {
 
             <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
               <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
+                <span className="text-3xl">🐄</span> Borana Cultural Heritage
+              </h3>
+              <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">
+                Discover the rich, sophisticated heritage of the Borana community. From their 
+                traditional songs and oral histories to their deep connection with the land and 
+                livestock, we provide an authentic immersion into their daily life and 
+                ancient customs that have shaped the Marsabit region for generations.
+              </p>
+            </div>
+
+            <div className="bg-orange-50 dark:bg-orange-950/20 p-8 rounded-2xl border border-orange-200 dark:border-orange-900/50 mb-12">
+              <h3 className="font-heading text-2xl font-bold text-orange-800 dark:text-orange-400 mb-4 flex items-center justify-center gap-3">
                 <span className="text-3xl">🏹</span> Samburu Warrior Culture
               </h3>
               <p className="text-orange-700 dark:text-orange-300 max-w-2xl mx-auto">
