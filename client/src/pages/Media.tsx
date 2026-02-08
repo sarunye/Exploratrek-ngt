@@ -1,10 +1,14 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { packages } from "@/data/packages";
 import { Play } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
+
+import boranaThumb from "@/assets/generated_images/borana_culture_thumbnail.png";
+import blacksmithThumb from "@/assets/generated_images/merille_blacksmith_thumbnail.png";
+import rockSlideThumb from "@/assets/generated_images/ngurunit_slide_thumbnail.png";
+import samburuThumb from "@/assets/generated_images/samburu_dance_thumbnail.png";
 
 // Custom media items that might not be directly linked to a package
 const ADDITIONAL_MEDIA = [
@@ -13,28 +17,28 @@ const ADDITIONAL_MEDIA = [
     title: "Experience the Culture of Marsabit",
     description: "A journey through the vibrant traditions and daily life of Marsabit's diverse communities.",
     videoUrl: "https://www.youtube.com/embed/ZQjAI-YU9wk",
-    thumbnail: "https://images.unsplash.com/photo-1547471080-7541fbe97529?auto=format&fit=crop&q=80&w=800"
+    thumbnail: boranaThumb
   },
   {
     id: "merille-craft",
     title: "The Blacksmiths of Merille",
     description: "Witness the ancient art of ironworking passed down through generations.",
     videoUrl: "https://www.youtube.com/embed/yX5VWRocKss",
-    thumbnail: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800"
+    thumbnail: blacksmithThumb
   },
   {
     id: "rock-sliding",
     title: "Ngurunit Rock Sliding",
     description: "Adrenaline-pumping natural water slides in the heart of the mountains.",
     videoUrl: "https://www.youtube.com/embed/JGi_j6p0smc",
-    thumbnail: "https://images.unsplash.com/photo-1682687982501-1e58ab814714?auto=format&fit=crop&q=80&w=800"
+    thumbnail: rockSlideThumb
   },
   {
     id: "samburu-dance",
     title: "Samburu Warrior Dance",
     description: "The spectacular jumping dance and songs of the Samburu warriors.",
     videoUrl: "https://www.youtube.com/embed/Q0WmlsNmHRo",
-    thumbnail: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&q=80&w=800"
+    thumbnail: samburuThumb
   }
 ];
 
