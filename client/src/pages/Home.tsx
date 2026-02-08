@@ -6,7 +6,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin, Users, Globe } from "lucide-react";
-import heroImage from "@assets/generated_images/chalbi_desert_land_cruiser_adventure.png";
+import heroImage from "@assets/WhatsApp_Image_2026-02-08_at_14.02.08_1770548878480.jpeg";
 
 export default function Home() {
   const featuredPackages = packages.slice(0, 3);
